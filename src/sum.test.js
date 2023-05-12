@@ -1,5 +1,13 @@
-const sum = require('./sum');
+import {sum} from "./sum";
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
-});
+describe ('test sum', () =>{
+        it('should 1+5',  ()=> {
+            const res = sum(1, 5)
+            expect(res).toBe(6)
+        });
+        it('sum 1 + -5', ()=> {
+            const res = sum(1, -5)
+            expect(res).toBe(-4)
+        });
+    }
+)
