@@ -1,4 +1,4 @@
-import {sum} from "./sum";
+import {sum} from "../../math_func/sum";
 
 describe ('test sum', () =>{
         it('should 1+5',  ()=> {
